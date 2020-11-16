@@ -1,0 +1,21 @@
+//colors
+$primary-color:#9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color:#99E2D0;
+$content-holder: rgb(246, 246, 246);
+
+//Fonts
+$primary-font: 'Roboto';
+$secondary-font:'Shrikhand';
+
+
+@mixin flex-center {
+    display:flex;
+    justify-content: center;
+    }
+    
+@mixin box-shadow {
+    box-shadow:1px -3px 3px -3px rgb(128, 128, 128);  
+    }
+    
+    

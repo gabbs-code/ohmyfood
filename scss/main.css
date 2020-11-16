@@ -1,0 +1,112 @@
+* {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+.main-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto";
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em;
+}
+
+.location_header {
+  -webkit-box-shadow: 1px -3px 3px -3px gray;
+          box-shadow: 1px -3px 3px -3px gray;
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 1.2em 0;
+  height: 3em;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.location_header span {
+  margin: 0 15px;
+}
+
+.location_content {
+  height: 20em;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.location_content h1 {
+  font-size: 1.8rem;
+  padding-top: 40px;
+}
+
+.location_content p {
+  font-weight: 200;
+  font-size: 1.3rem;
+  padding: 40px;
+}
+
+.location_content button {
+  width: 14em;
+  padding: 20px;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  background-color: #9356DC;
+}
+
+.filter {
+  height: 20em;
+  margin: 2.5em 0px 0px 10px;
+}
+
+.filter_cards_wrapper {
+  margin-top: 20px;
+}
+
+.filter_cards button {
+  width: 30em;
+  padding: 2em;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.filter_cards button:hover {
+  background-color: #f2eafb;
+}
+
+.filter_numbers {
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 100%;
+  color: #ffffff;
+  margin-left: 15px;
+  background-color: #9356DC;
+}
+
+.filter_icon {
+  float: left;
+  color: #686464;
+}
+
+.filter_icon:hover {
+  color: #9356DC;
+}
+/*# sourceMappingURL=main.css.map */
