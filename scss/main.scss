@@ -3,7 +3,6 @@
 
 html {
 font-family: $primary-font;
-
 }
 header{
     @include flex-center;
@@ -15,7 +14,7 @@ header{
  @include box-shadow;
  background-color: rgb(234, 234, 234); text-align: center;
  padding: 1.2em 0;
- height: 3em;
+ height: 4em;
  font-size:1rem;
  font-weight: 400;
      span {
@@ -46,16 +45,13 @@ background-color: $content-holder;
     border-radius: 50px;
     border: none;
     color: #ffffff;
-    background-color: $primary-color;
+    background: linear-gradient( $secondary-color, $primary-color);
     }
-
 }
 
 .filter {
-height: 20em;
+height: 23em;
 margin: 2.5em 0px 0px 10px;
-
-    
 }
 
 .filter_cards_wrapper{
@@ -65,8 +61,11 @@ margin-top: 20px;
 }
 .filter_cards{
     button {
-    width: 30em;
-    padding: 2em;
+    font-size: 20px; 
+    text-align: left;
+    font-weight: 500;
+    width: 20em;
+    padding: 1.2em;
     border: none;
     margin-bottom: 15px;
     border-radius: 25px;
@@ -74,28 +73,110 @@ margin-top: 20px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         &:hover {
         background-color: lighten($color: $primary-color, $amount: 35%);
+         box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);      
     }
 }
-
 }
 .filter_numbers {
+display: inline-flex;
 font-size: 10px;
 padding: 10px;
 border-radius:100% ;
 color: #ffffff;
 margin-left: 15px;
+transform: translate(20px, 4px);
 background-color: $primary-color;
+transition: 0.7s;
+    &:hover {
+    color:  $primary-color;
+    background-color: lighten($color: $secondary-color, $amount: 20%);
+    border: 3px dashed $primary-color;
+    }
 
 }
 
 .filter_icon{
 float: left;
-color:rgb(104, 100, 100);
+margin-right: 15px;
+color: grey;
     &:hover {
         color: $primary-color;
     }
 }
+.restaurant_wrapper {
+background-color:$content-holder;
+height: 82em;
+    img{
+    height: 67%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+    h2 {
+    padding: 9px;
+    transform: translate(48px, 20px);
+    }
 
-    
-   
+}
+.restaurant_cards {
+height: 16em;
+width: 22em;
+background-color: #ffffff;
+outline: none;
+margin: 29px auto;
+transition: 0.9s;
+border-radius: 20px;   
+box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);   
+     &:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+.restaurant_card_text {
+ margin: 10px 0px 0px 20px;
+
+    .heart {
+   float: right;
+   transform: translate(-20px,-30px);
+   border: none;
+    &:hover {
+  @include gradient;
+  border-radius: 50%;
+  object-fit: cover;
+
+
+    }
+    }
+    h3 {
+    text-align: left;
+    }
+}   
+footer {
+box-sizing: border-box;
+margin-top: -60px;
+height: 20%;
+padding-top: 20px;
+background-color: rgb(53, 53, 53);
+    p, span , .footer_icon{
+    color: #ffffff;
+    }
+    img {
+    width: 25%;
+    height: 25%;
+    margin-left: 1.5em;
+    filter: invert(1);
+    }
+}
+.footer_wrapper {
+    margin: 5px 0px 4px 25px;
+        span, p{
+        line-height: 1.8;
+        }
+        .footer_icon {
+        margin-right: 8px;
+        }
+    } 
+  
+
    

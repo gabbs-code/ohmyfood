@@ -1,0 +1,112 @@
+@import 'config';
+@import 'utilities';
+
+html{
+font-family: $primary-font;    
+}
+header {
+    .logo {
+    display: flex;
+    }
+}   
+   .menu_img {
+    height: 30%;
+    width: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+
+.menu_wrapper {
+box-sizing: border-box;
+margin: 0 auto;
+padding-top: 2.5em;
+z-index: 1;
+transform: translateY(-47px);
+border-top-right-radius: 40px;
+border-top-left-radius: 40px;
+background-color: $content-holder;
+    h1 {
+    font-family: $secondary-font;
+    margin-left: 10px;
+    }
+    .heart {
+    transform: translate(400px, -41px);
+    }
+}
+.menu_item_wrapper {
+    hr{
+    width: 14%;
+    margin-left: 35px;
+    border: 2px rgb( 153, 226, 208) solid;
+}
+
+    h2 {
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin: 0px 0px 10px 33px;
+    }
+    .menu_items {
+    height: 5em;
+    width: 26em;
+    background-color: #ffffff;
+    outline: none;
+    margin: 29px auto;
+    padding: 15px;
+    transition: 0.9s;
+    border-radius: 15px;   
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);   
+            &:hover {
+        cursor: pointer;
+        box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+        }
+        h3{
+        font-weight: 400;
+        }
+        .menu_text {
+        font-weight: 200;
+        }
+        .euro {
+        float: right;
+        }
+    }
+ 
+}
+button {
+    width: 14em;
+    padding: 20px;
+    margin: 20px 0px 50px 87px;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    background: linear-gradient( $secondary-color, $primary-color);
+        &:hover {
+        cursor: pointer;
+        }
+    }
+footer {
+    box-sizing: border-box;
+    margin-top: -60px;
+    height: 20%;
+    padding-top: 20px;
+    background-color: rgb(53, 53, 53);
+        p, span , .footer_icon{
+        color: #ffffff;
+        }
+        img {
+        width: 25%;
+        height: 25%;
+        margin-left: 1.5em;
+        filter: invert(1);
+        }
+    }
+    .footer_wrapper {
+        margin: 5px 0px 4px 25px;
+            span, p{
+            line-height: 1.8;
+            }
+            .footer_icon {
+            margin-right: 8px;
+            }
+        } 

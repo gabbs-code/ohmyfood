@@ -8,6 +8,8 @@ $content-holder: rgb(246, 246, 246);
 $primary-font: 'Roboto';
 $secondary-font:'Shrikhand';
 
+$breakpoint-mobile: 481px;
+
 
 @mixin flex-center {
     display:flex;
@@ -17,5 +19,8 @@ $secondary-font:'Shrikhand';
 @mixin box-shadow {
     box-shadow:1px -3px 3px -3px rgb(128, 128, 128);  
     }
+@mixin gradient {
+   background:linear-gradient( $secondary-color, $primary-color);
+}
     
     
