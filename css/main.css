@@ -215,4 +215,218 @@ footer img {
 .footer_wrapper .footer_icon {
   margin-right: 8px;
 }
+
+@media screen and (min-device-width: 768px) {
+  header {
+    margin: 2em;
+    transform: translate(180px, 3px);
+  }
+  .location_header {
+    width: 45.5em;
+  }
+  .location_header span {
+    font-size: 1.7rem;
+  }
+  .location_header .map-marker {
+    font-size: 1.6rem;
+  }
+  .location_content {
+    width: 49.9em;
+  }
+  .location_content button {
+    font-size: 1.9rem;
+  }
+  .location_content h1 {
+    font-size: 2.4rem;
+  }
+  .location_content p {
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding: 28px;
+  }
+  .filter {
+    width: 48.6em;
+    height: 14em;
+  }
+  .filter h2 {
+    font-size: 2rem;
+  }
+  .filter .filter_cards_wrapper {
+    display: flex;
+    width: auto;
+  }
+  .filter .filter_cards button {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 800;
+    width: 11.5em;
+    height: 5em;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .filter .filter_cards button:hover {
+    background-color: #f4eefc;
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .filter .filter_numbers {
+    display: none;
+  }
+  .filter .filter_icon {
+    color: #d7c0f2;
+  }
+  .restaurant_wrapper {
+    width: 50em;
+    height: 59em;
+    padding: 46px 40px;
+  }
+  .restaurant_wrapper h2 {
+    font-size: 2rem;
+  }
+  .restaurant_wrapper img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .restaurant_wrapper .card_wrapper {
+    display: grid;
+    grid-template-columns: 368px 354px;
+    grid-gap: 14px;
+  }
+  .restaurant_wrapper .restaurant_cards {
+    height: 22em;
+    width: 20em;
+    border-radius: 40px;
+  }
+  .restaurant_wrapper .restaurant_card_text h3 {
+    font-size: 1.4rem;
+  }
+  .restaurant_wrapper .restaurant_card_text p {
+    font-size: 1.3rem;
+  }
+  footer {
+    width: 50em;
+    padding-top: 26px;
+    margin-top: 0;
+    padding-bottom: 13px;
+  }
+  footer .footer_wrapper {
+    margin: 5px 0px 20px 25px;
+  }
+  footer .footer_wrapper span, footer .footer_wrapper p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-device-width: 1024px) {
+  header {
+    margin: 3em;
+    transform: none;
+    width: auto;
+  }
+  header img {
+    height: 150%;
+  }
+  .location_header {
+    width: 70em;
+    height: 5em;
+  }
+  .location_header span {
+    font-size: 2.5rem;
+  }
+  .location_content {
+    width: 77em;
+    height: 28em;
+  }
+  .location_content h1 {
+    font-size: 4rem;
+  }
+  .location_content p {
+    font-size: 2.7rem;
+  }
+  .location_content button {
+    font-size: 3rem;
+    padding: .5em;
+  }
+  .filter {
+    width: 76em;
+    height: 28em;
+  }
+  .filter h2 {
+    margin-left: 5%;
+    font-size: 2.5rem;
+  }
+  .filter .filter_cards button {
+    width: 12em;
+    height: 12em;
+    font-size: 1.4rem;
+    color: #635c5c;
+    position: relative;
+    border: 7px solid #9356DC;
+    border-radius: 75%;
+    background-color: #faf7fd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  }
+  .filter .filter_cards button:hover {
+    background-color: white;
+    border: 7px solid #FF79DA;
+    transform: rotate(359deg);
+    cursor: pointer;
+    box-shadow: none;
+  }
+  .filter .filter_icon {
+    color: #ad9d9d;
+  }
+  .filter_icon:nth-child(1) {
+    margin-left: 15px;
+  }
+  .restaurant_wrapper {
+    width: 76em;
+    height: 76em;
+    background: none;
+  }
+  .restaurant_wrapper h2 {
+    font-size: 3rem;
+  }
+  .restaurant_wrapper .card_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .restaurant_wrapper .restaurant_cards {
+    height: 30em;
+    width: 24em;
+  }
+  .restaurant_wrapper .restaurant_cards .restaurant_card_text h3 {
+    font-size: 1.8rem;
+  }
+  .restaurant_wrapper .restaurant_cards p {
+    font-size: 1.5rem;
+  }
+  .restaurant_wrapper .restaurant_cards .heart {
+    transform: translate(-28px, -60px);
+  }
+  footer {
+    width: 77em;
+  }
+  footer img {
+    margin-left: 2.5em;
+    margin-top: 2em;
+  }
+  footer .footer_wrapper {
+    display: flex;
+    margin: 41px 0px 35px 25px;
+  }
+  footer .footer_wrapper span, footer .footer_wrapper p {
+    font-size: 2.1rem;
+  }
+  footer .footer_wrapper span:hover, footer .footer_wrapper p:hover {
+    color: #FF79DA;
+  }
+  footer .footer_wrapper .footer_icon {
+    font-size: x-large;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,11 @@
 @import 'utilities';
 @import 'config';
 
+
 html {
-font-family:$primary-font;
+font-family: $primary-font;
 }
+
 header{
     @include flex-center;
     margin: 1em;
@@ -187,6 +189,241 @@ background-color: rgb(53, 53, 53);
         margin-right: 8px;
         }
     } 
-  
 
-   
+    //***** Media Query Tablet ********
+  
+    @media screen and (min-device-width: 768px) {
+        header {
+         margin: 2em;
+         transform: translate(180px, 3px);
+         
+        }
+    
+        .location_header {
+            width: 45.5em;
+                span {
+                font-size: 1.7rem;
+                }
+                .map-marker {
+                font-size: 1.6rem;
+                }
+            }
+        .location_content {
+            width: 49.9em;
+            button{
+            font-size: 1.9rem  ;
+            }
+            h1{
+            font-size: 2.4rem;
+            }
+            p {
+            font-size: 1.7rem;
+            font-weight: 300;
+            padding: 28px;
+            }
+        }
+        .filter {
+            width: 48.6em;
+            height: 14em;
+            h2{
+            font-size: 2rem;
+    
+            }
+            .filter_cards_wrapper {
+            display: flex;
+            width: auto;
+            }
+            .filter_cards button {
+                font-size: 20px;
+                text-align: left;
+                font-weight: 800;
+                width: 11.5em;
+                height: 5em;
+                border: none;
+                padding: 10px;
+                border-radius: 25px;
+                background-color: #f6f6f6;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                &:hover {
+                    background-color: lighten($color: $primary-color, $amount: 36%);
+                     box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);  
+                     cursor: pointer;    
+                }
+            }
+            .filter_numbers {
+                display: none;
+                }
+            .filter_icon {
+            color: lighten($color: $primary-color, $amount: 25%);
+            }
+        }
+        .restaurant_wrapper {
+         width: 50em;
+         height: 59em;
+         padding: 46px 40px;
+            h2{
+            font-size: 2rem;
+            }
+            img{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            }
+            .card_wrapper {
+                display: grid;
+                grid-template-columns: 368px 354px;
+                grid-gap: 14px;
+            }
+            .restaurant_cards {
+            height: 22em;
+            width: 20em;
+            border-radius: 40px;    
+            }
+            .restaurant_card_text  {
+                h3{
+                font-size: 1.4rem;
+                }
+                p{
+                font-size: 1.3rem;
+                }
+            }
+        }
+    
+        footer { 
+        width: 50em;
+        padding-top: 26px;
+        margin-top: 0;
+        padding-bottom: 13px;
+            .footer_wrapper {
+            margin: 5px 0px 20px 25px;
+                span, p{
+                font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    //*******Desktop Media Query*******
+
+@media screen 
+and (min-device-width: 1024px) {
+
+header {
+margin: 3em;
+transform: none;
+width: auto;
+    img {
+    height: 150%;
+    }
+}
+.location_header {
+width: 70em; 
+height: 5em; 
+    span{
+    font-size: 2.5rem;
+    }
+}
+.location_content {
+width: 77em;
+height: 28em;
+    h1{
+    font-size: 4rem;
+    }
+    p{
+    font-size: 2.7rem;
+    }
+    button {
+    font-size: 3rem;
+    padding: .5em;
+    }
+}
+.filter{
+width: 76em;
+height: 28em;
+    h2{
+    margin-left: 5%;
+    font-size: 2.5rem;
+    }
+}
+.filter .filter_cards button {
+width: 12em;
+height: 12em;
+font-size: 1.4rem;
+color: #635c5c;
+position: relative;
+border: 7px solid $primary-color;
+border-radius: 75%;
+background-color: lighten($color: $primary-color, $amount: 38s);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    &:hover {
+    background-color: white;
+    border: 7px solid $secondary-color;
+    transform: rotate(359deg);
+    cursor: pointer;
+    box-shadow: none;
+    } 
+}
+
+.filter .filter_icon {
+    color: #ad9d9d;
+    }
+.filter_icon:nth-child(1){
+margin-left: 15px;
+}
+
+.restaurant_wrapper {
+width: 76em;
+height: 76em;
+background: none;
+    h2{
+    font-size: 3rem;
+    }
+    .card_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .restaurant_cards {
+    height: 30em;
+    width: 24em;
+        .restaurant_card_text h3{
+        font-size: 1.8rem
+        }
+        p{
+        font-size: 1.5rem;
+        }
+        .heart{
+        transform: translate(-28px, -60px);
+        }
+    }
+}
+ footer {
+width: 77em;
+    img {
+    margin-left: 2.5em;
+    margin-top: 2em;
+    }
+    .footer_wrapper{
+    display: flex;
+    margin: 41px 0px 35px 25px;
+        span, p {
+        font-size: 2.1rem;
+        &:hover{
+        color: $secondary-color;
+        }
+        }
+    .footer_icon {
+    font-size: x-large;
+    }
+    }
+ }
+ }
+
+
+
+
+
+
+
+
+
+
+
