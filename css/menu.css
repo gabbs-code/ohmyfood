@@ -74,24 +74,91 @@ header .arrow {
   padding: 15px;
   transition: 0.9s;
   border-radius: 15px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
 }
 
 .menu_item_wrapper .menu_items:hover {
   cursor: pointer;
-  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
 }
 
 .menu_item_wrapper .menu_items h3 {
   font-weight: 400;
+  overflow: unset;
+  text-overflow: unset;
 }
 
 .menu_item_wrapper .menu_items .menu_text {
   font-weight: 200;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .menu_item_wrapper .menu_items .euro {
   float: right;
+  transition: .5s;
+  z-index: 99;
+}
+
+.menu_item_wrapper .menu_items .euro:hover {
+  margin-right: 6em;
+}
+
+.green_slider {
+  height: 5rem;
+  width: 5rem;
+  background-color: #99E2D0;
+  overflow: hidden;
+  position: absolute;
+  right: 20px;
+  top: 186px;
+  border-top-right-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  transition-duration: .5s;
+  opacity: 0;
+}
+
+.green_slider:hover {
+  cursor: pointer;
+  opacity: 1;
+  animation: slide-left 2s ease  1s backwards;
+}
+
+.green_slider .checked_circle {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2.1rem;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes greenslider {
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-5em);
+  }
+}
+
+@keyframes euro_slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
 }
 
 button {
