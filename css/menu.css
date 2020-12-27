@@ -96,7 +96,6 @@ header .arrow {
 .menu_item_wrapper .menu_items .euro {
   float: right;
   transition: .5s;
-  z-index: 99;
 }
 
 .menu_item_wrapper .menu_items .euro:hover {
@@ -109,18 +108,18 @@ header .arrow {
   background-color: #99E2D0;
   overflow: hidden;
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 186px;
+  transform: translateX(100%);
+  transition: .5s;
   border-top-right-radius: 1.5em;
   border-bottom-right-radius: 1.5em;
-  transition-duration: .5s;
   opacity: 0;
 }
 
 .green_slider:hover {
-  cursor: pointer;
   opacity: 1;
-  animation: slide-left 2s ease  1s backwards;
+  transform: translateX(0);
 }
 
 .green_slider .checked_circle {

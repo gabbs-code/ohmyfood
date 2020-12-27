@@ -77,7 +77,7 @@ background-color: $content-holder;
         .euro {
         float: right;
         transition: .5s;
-        z-index: 99;
+        // z-index: 99;
             &:hover{
             margin-right: 6em;   
             }
@@ -92,18 +92,19 @@ background-color: $content-holder;
     background-color: $tertiary-color;
     overflow: hidden;
     position: absolute;
-    right:20px;
+    right:10px;
     top: 186px;
+    transform: translateX(100%);
+    transition: .5s;
+
     border-top-right-radius: 1.5em;
     border-bottom-right-radius: 1.5em;
-    transition-duration:.5s;
     opacity: 0;
-   
 
     &:hover {
-    cursor: pointer;
-    opacity: 1;
-    animation: slide-left 2s ease  1s backwards;
+    //  cursor: pointer;
+     opacity: 1;
+    transform: translateX(0);
      
     }
    
