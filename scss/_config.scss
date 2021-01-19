@@ -23,4 +23,41 @@ $breakpoint-mobile: 481px;
    background:linear-gradient( $secondary-color, $primary-color);
 }
     
-    
+@keyframes preloader{
+    from{ bottom: -100px; opacity: 0;
+
+    }
+     to{ bottom: 0px;   opacity: 1;
+    }
+   }
+     @keyframes loading{
+    from{ top: -100px; opacity: 0;
+    }
+     to{ top: 0px;   opacity: 1;
+    }
+   }
+
+   @keyframes slideright {
+    from {
+      margin-right: 0;
+    }
+    to {
+      margin-right: -47%;
+    }
+  }
+  
+  @keyframes slideleft {
+    from {
+        margin-right: -35%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}
+
+@keyframes rotate {
+  
+    0% {
+        transform: rotate(360deg);
+    }
+}

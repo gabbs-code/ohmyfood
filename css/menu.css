@@ -1,3 +1,49 @@
+@keyframes preloader {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideright {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -47%;
+  }
+}
+
+@keyframes slideleft {
+  from {
+    margin-right: -35%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
 * {
   margin: 0 auto;
   box-sizing: border-box;
@@ -174,6 +220,11 @@ button {
 
 button:hover {
   cursor: pointer;
+  border: 10px solid #FF79DA;
+  background: white;
+  color: #9356DC;
+  font-weight: 900;
+  font-size: 1.7rem;
 }
 
 footer {
@@ -189,8 +240,7 @@ footer p, footer span, footer .footer_icon {
 }
 
 footer img {
-  width: 25%;
-  height: 25%;
+  height: 1.7em;
   margin-left: 1.5em;
   filter: invert(1);
 }
@@ -203,8 +253,18 @@ footer img {
   line-height: 1.8;
 }
 
+.footer_wrapper span:hover, .footer_wrapper p:hover {
+  cursor: pointer;
+  color: #FF79DA;
+}
+
 .footer_wrapper .footer_icon {
   margin-right: 8px;
+}
+
+.footer_wrapper .footer_icon:hover {
+  cursor: pointer;
+  color: #FF79DA;
 }
 
 .main_wrapper {
@@ -215,49 +275,33 @@ footer img {
   animation: loading 4s ease-in-out;
 }
 
-@keyframes preloader {
-  from {
-    bottom: -100px;
-    opacity: 0;
+@media screen and (min-device-width: 768px) {
+  header img {
+    height: 4em;
   }
-  to {
-    bottom: 0px;
-    opacity: 1;
+  .menu_item_wrapper .menu_items {
+    margin: 2em 1em 2em 2.5em;
   }
-}
-
-@keyframes loading {
-  from {
-    top: -100px;
-    opacity: 0;
+  .euro {
+    padding: 6% 0 0 0;
   }
-  to {
-    top: 0px;
-    opacity: 1;
+  button {
+    margin: 1em 0em 3em 8em;
+    font-size: 1.5rem;
   }
-}
-
-@keyframes slideright {
-  from {
-    margin-right: 0;
+  footer img {
+    height: 3em;
   }
-  to {
-    margin-right: -47%;
+  footer img {
+    height: 3em;
+    width: auto;
   }
-}
-
-@keyframes slideleft {
-  from {
-    margin-right: -35%;
+  .footer_wrapper {
+    display: flex;
+    margin: 2em 0em 2em 2em;
   }
-  to {
-    margin-right: 0%;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(360deg);
+  .footer_wrapper p, .footer_wrapper span {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=menu.css.map */
