@@ -300,6 +300,9 @@ footer img {
     margin: 1em 0em 3em 8em;
     font-size: 1.5rem;
   }
+  button:hover {
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  }
   footer img {
     height: 3em;
   }
@@ -341,6 +344,9 @@ footer img {
     margin: 2em 0 2em 0;
     position: relative;
     left: 40%;
+  }
+  button:hover {
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   }
   footer {
     padding-bottom: 0.6%;

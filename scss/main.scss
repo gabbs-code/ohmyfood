@@ -43,7 +43,6 @@ background-color: $content-holder;
         padding: 40px;
     }
     button {
-    // width: 14em;
     width: 50%;
     padding: 20px;
     font-size: 1.3rem;
@@ -51,14 +50,6 @@ background-color: $content-holder;
     border: none;
     color: #ffffff;
     background: linear-gradient( $secondary-color, $primary-color);
-        &:hover {
-        cursor: pointer;
-        border: 10px solid  $secondary-color;
-        background: white;
-        color: $primary-color;
-        font-weight: 900;
-        font-size: 2.5rem;
-        }
     }
 }
 
@@ -226,7 +217,7 @@ background-color: rgb(53, 53, 53);
           animation:spin 2s  linear;
           border:solid 2vmin transparent;
           border-radius:50%;
-          border-right-colo: $primary-color;
+          border-right-color: $primary-color;
           border-top-color: $secondary-color;
           box-sizing:border-box;
           content:"";
@@ -281,7 +272,16 @@ background-color: rgb(53, 53, 53);
     .location_content {
         width: 49.9em;
         button{
-        font-size: 1.9rem  ;
+        font-size: 1.9rem;
+        &:hover {
+            cursor: pointer;
+            border: 10px solid  $secondary-color;
+            background: white;
+            color: $primary-color;
+            font-weight: 800;
+            font-size: 1.8rem;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);  
+            }
         }
         h1{
         font-size: 2.4rem;
@@ -315,9 +315,10 @@ background-color: rgb(53, 53, 53);
             background-color: #f6f6f6;
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
             &:hover {
-                background-color: lighten($color: $primary-color, $amount: 36%);
-                 box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);  
-                 cursor: pointer;    
+                background-color: #ffffff;
+                 box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);  
+                 cursor: pointer; 
+                 border: 5px solid $secondary-color;
             }
         }
         .filter_numbers {
@@ -410,8 +411,11 @@ height: 28em;
     font-size: 2.7rem;
     }
     button {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: .5em;
+        &:hover {
+        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+        }
     }
 }
 .filter{
