@@ -210,45 +210,45 @@ background-color: rgb(53, 53, 53);
     } 
 
     .loader {
-        animation:spin 1s  linear forwards;
+        animation:spin 1.5s  linear forwards;
         border:solid 2vmin transparent;
         border-radius:50%;
-        border-right-color:#09f;
-        border-top-color:#09f;
+        border-right-color: $primary-color;
+        border-top-color: $secondary-color;
         box-sizing:border-box;
-        height:20vmin;
-        left:calc(50% - 10vmin);
+        height: 30vmin;
+        left:calc(50% - 20vmin);
         position:fixed;
-        top:calc(50% - 10vmin);
-        width:20vmin;
+        top:calc(50% - 20vmin);
+        width:30vmin;
         z-index:1;
         &:before {
           animation:spin 2s  linear;
           border:solid 2vmin transparent;
           border-radius:50%;
-          border-right-color:#3cf;
-          border-top-color:#3cf;
+          border-right-colo: $primary-color;
+          border-top-color: $secondary-color;
           box-sizing:border-box;
           content:"";
-          height:16vmin;
+          height: 20vmin;
           left:0;
           position:absolute;
           top:0;
-          width:16vmin;
+          width: 20vmin;
         }
         &:after {
           animation:spin 3s  linear;
           border:solid 2vmin transparent;
           border-radius:50%;
-          border-right-color:#6ff;
-          border-top-color:#6ff;
+          border-right-color: $secondary-color;
+          border-top-color: $primary-color;
           box-sizing:border-box;
           content:"";
-          height:12vmin;
+          height:20vmin;
           left:2vmin;
           position:absolute;
           top:2vmin;
-          width:12vmin;
+          width:20vmin;
         }
       }
       
@@ -387,7 +387,7 @@ transform:none;
 width: auto;
     img {
     height: 8em;
-    margin-left: 10em;
+    left: 10%;
     }
 }
 .location_header {
@@ -424,17 +424,17 @@ height: 80%;
     .filter_cards_wrapper{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+     width: 80%;
     }
 }
 .filter .filter_cards button {
 width: 12em;
 height: 12em;
-font-size: 1.4rem;
+font-size: 1rem;
 color: #635c5c;
 position: relative;
-border: 7px solid $primary-color;
-border-radius: 75%;
+border: 5px solid $primary-color;
+border-radius: 50%;
 background-color: #ffffff;
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
@@ -466,7 +466,7 @@ background: none;
     .card_wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     }
     .restaurant_cards {
     // height: 25em;

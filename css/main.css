@@ -289,17 +289,17 @@ footer img {
 }
 
 .loader {
-  animation: spin 1s  linear forwards;
+  animation: spin 1.5s  linear forwards;
   border: solid 2vmin transparent;
   border-radius: 50%;
-  border-right-color: #09f;
-  border-top-color: #09f;
+  border-right-color: #9356DC;
+  border-top-color: #FF79DA;
   box-sizing: border-box;
-  height: 20vmin;
-  left: calc(50% - 10vmin);
+  height: 30vmin;
+  left: calc(50% - 20vmin);
   position: fixed;
-  top: calc(50% - 10vmin);
-  width: 20vmin;
+  top: calc(50% - 20vmin);
+  width: 30vmin;
   z-index: 1;
 }
 
@@ -307,30 +307,30 @@ footer img {
   animation: spin 2s  linear;
   border: solid 2vmin transparent;
   border-radius: 50%;
-  border-right-color: #3cf;
-  border-top-color: #3cf;
+  border-right-colo: #9356DC;
+  border-top-color: #FF79DA;
   box-sizing: border-box;
   content: "";
-  height: 16vmin;
+  height: 20vmin;
   left: 0;
   position: absolute;
   top: 0;
-  width: 16vmin;
+  width: 20vmin;
 }
 
 .loader:after {
   animation: spin 3s  linear;
   border: solid 2vmin transparent;
   border-radius: 50%;
-  border-right-color: #6ff;
-  border-top-color: #6ff;
+  border-right-color: #FF79DA;
+  border-top-color: #9356DC;
   box-sizing: border-box;
   content: "";
-  height: 12vmin;
+  height: 20vmin;
   left: 2vmin;
   position: absolute;
   top: 2vmin;
-  width: 12vmin;
+  width: 20vmin;
 }
 
 @keyframes spin {
@@ -457,7 +457,7 @@ footer img {
   }
   header img {
     height: 8em;
-    margin-left: 10em;
+    left: 10%;
   }
   .location_header {
     width: 100%;
@@ -499,11 +499,11 @@ footer img {
   .filter .filter_cards button {
     width: 12em;
     height: 12em;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #635c5c;
     position: relative;
-    border: 7px solid #9356DC;
-    border-radius: 75%;
+    border: 5px solid #9356DC;
+    border-radius: 50%;
     background-color: #ffffff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
@@ -533,7 +533,7 @@ footer img {
   .restaurant_wrapper .card_wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
   }
   .restaurant_wrapper .restaurant_cards {
     justify-content: space-around;
