@@ -44,6 +44,30 @@
   }
 }
 
+@keyframes animateone {
+  0% {
+    top: 100px;
+    transform: scale(1.5);
+  }
+  100% {
+    top: -100px;
+    transform: scale(0.7);
+    opacity: 0;
+  }
+}
+
+@keyframes animatetwo {
+  0% {
+    top: -40px;
+    transform: scale(0.5);
+  }
+  100% {
+    top: 40px;
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
 * {
   margin: 0 auto;
   box-sizing: border-box;
@@ -309,6 +333,7 @@ footer img {
   footer img {
     height: 3em;
     width: auto;
+    filter: invert(1);
   }
   .footer_wrapper {
     display: flex;
@@ -338,7 +363,7 @@ footer img {
     font-size: 1.3rem;
   }
   .euro {
-    padding: 3.5% 0 0 0;
+    padding: 2.9% 0 0 0;
   }
   button {
     margin: 2em 0 2em 0;
@@ -355,6 +380,7 @@ footer img {
   footer img {
     height: 4em;
     margin-left: 3.5em;
+    filter: invert(1);
   }
 }
 /*# sourceMappingURL=menu.css.map */

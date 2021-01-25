@@ -202,7 +202,6 @@ footer {
     } 
 
     }
-
    .menu_item_wrapper {
         h2 {
         font-weight: 400;
@@ -231,6 +230,7 @@ footer {
     img{
     height: 3em;
     width: auto;
+    filter: invert(1);
     }
     }
     .footer_wrapper{
@@ -242,6 +242,8 @@ footer {
      }
 
 }
+//  *************** Desktop Media Query **************
+
 @media screen and (min-device-width: 1024px) {
 .menu_wrapper {
     h1{
@@ -266,7 +268,7 @@ footer {
      }
  }
 .euro {
-padding: 3.5% 0 0 0;
+padding: 2.9% 0 0 0;
 }
 button {
 margin: 2em 0 2em 0;
@@ -283,6 +285,7 @@ padding-top: 3%;
     img{
     height:4em;
     margin-left:3.5em;
+    filter: invert(1);
     }
 }
 
