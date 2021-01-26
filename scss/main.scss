@@ -209,32 +209,23 @@ background-color: rgb(53, 53, 53);
          position: absolute;
          top: 50%;
          left: 5%;
-    
          animation: preloader 2s ease-in-out;
-         
-        
-       
     }
-    
     .loader div{
         height: 13vh;
         width: 13vw;
         border-radius: 50%;
         margin-left: 1em;
-        background: linear-gradient($tertiary-color, $secondary-color);
-      
+        background: linear-gradient($tertiary-color, $secondary-color); 
     }
-    
     .loader div:nth-child(1),.loader div:nth-child(3),.loader div:nth-child(5){
         animation: animateone 4s linear forwards;
         top: 80px;
     }
-    
     .loader div:nth-child(2),.loader div:nth-child(4),.loader div:nth-child(6){
         animation: animatetwo 4s linear forwards;
         top: -80px;
     }
-    
 //*****  Tablet Media Query ********
   
 @media screen and (min-device-width: 768px) {
