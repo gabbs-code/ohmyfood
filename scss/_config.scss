@@ -65,12 +65,14 @@ $breakpoint-mobile: 481px;
   0%{
       top:100px;
       transform:scale(1.5);
+      z-index: 100;
 
   }
   100%{
       top:-100px;
       transform:scale(0.7);
       opacity: 0;
+      z-index: -100;
   }
   
 }
@@ -79,11 +81,13 @@ $breakpoint-mobile: 481px;
   0%{
       top:-40px;
       transform:scale(0.5);
+      z-index: 100;
   }
   100%{
       top:40px;
       transform:scale(1);
       opacity: 0;
+      z-index: -100;
   }
 }
 
