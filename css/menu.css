@@ -128,14 +128,6 @@ header .arrow {
   opacity: 1;
 }
 
-.enchanted {
-  transform: translate(339px, -41px);
-}
-
-.hearty {
-  transform: translate(374px, -41px);
-}
-
 .menu_wrapper {
   box-sizing: border-box;
   margin: 0 auto;
@@ -149,6 +141,7 @@ header .arrow {
 .menu_wrapper h1 {
   font-family: "Shrikhand";
   margin-left: 10px;
+  font-size: 1.7rem;
 }
 
 .menu_item_wrapper hr {

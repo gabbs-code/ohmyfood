@@ -34,14 +34,6 @@ cursor: pointer;
 opacity: 1;
  }
 }
-// ******* Enchanted Menu Readjustement *****
-.enchanted{
-transform: translate(339px, -41px);
-}
-.hearty{
-transform: translate(374px, -41px);
-}
-// *****************************************
 .menu_wrapper {
 box-sizing: border-box;
 margin: 0 auto;
@@ -53,6 +45,7 @@ background-color: $content-holder;
     h1 {
     font-family: $secondary-font;
     margin-left: 10px;
+    font-size: 1.7rem;
     }
 }
 .menu_item_wrapper {

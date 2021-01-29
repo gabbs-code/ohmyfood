@@ -317,7 +317,8 @@ footer img {
   position: absolute;
   top: 50%;
   left: 5%;
-  animation: preloader 2s ease-in-out;
+  width: 90vw;
+  animation: preloader 4s forwards;
 }
 
 .loader div {
