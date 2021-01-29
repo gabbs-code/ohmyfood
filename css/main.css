@@ -587,5 +587,8 @@ footer img {
   footer .footer_wrapper .footer_icon {
     font-size: x-large;
   }
+  footer .fa-utensils {
+    transform: translate(1.5em, 0.7em);
+  }
 }
 /*# sourceMappingURL=main.css.map */
