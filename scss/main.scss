@@ -206,16 +206,16 @@ background-color: rgb(53, 53, 53);
     .loader{
          display: flex;
          position: absolute;
-         top: 25%;
-         left: 5%;
-         width: 90vw;
-         height: fit-content;
+         top: 10%;
+         width: 29em;
+         align-items: center;
+         justify-content: space-around;
          animation: preloader 4s forwards;
          
     }
     .loader div{
-        height: 13vh;
-        width: 13vw;
+        height: 5em;
+        width: 5em;
         border-radius: 50%;
         margin-left: 1em;
         background: linear-gradient($tertiary-color, $secondary-color); 
@@ -228,9 +228,37 @@ background-color: rgb(53, 53, 53);
         animation: animatetwo 4s linear forwards;
         top: -80px;
     }
+ 
+    // *******************  Small Media Query Iphone 5/SE ***********
+@media screen and ( min-width: 320px) {
+    body{
+    width: fit-content;
+    }
+    .loader{
+    top: 35%;
+    width: fit-content;
+    height: 10em;
+    }
+    
+    .loader div {
+    width: 3.5em;
+    height: 3.5em;
+     }
+    
+    }
 //*****  Tablet Media Query ********
   
 @media screen and (min-width: 768px) {
+.loader{
+top: 25%;
+left: 5%;
+width: auto;
+       
+   }
+   .loader div {
+    width: 7em;
+    height: 7em;
+   }
     header {
      margin: 2em;
      transform: translate(180px, 3px);
@@ -358,6 +386,15 @@ background-color: rgb(53, 53, 53);
 
 @media screen and (min-width: 1024px) {
 
+.loader{
+ top: 30%;
+ width: auto;
+        
+   }
+.loader div {
+ width: 9em;
+ height: 9em;
+   }
 
 header {
 margin: 3em;
@@ -499,6 +536,7 @@ width: 100%;
 
  }
  }
+
 
 
   

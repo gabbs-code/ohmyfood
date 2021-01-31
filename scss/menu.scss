@@ -10,6 +10,7 @@ header {
     }
     .arrow  {
     transform: translate(20px, 24px);
+    font-size: 1.8rem;
 }
     }
    .menu_img {
@@ -44,8 +45,8 @@ border-top-left-radius: 40px;
 background-color: $content-holder;
     h1 {
     font-family: $secondary-font;
-    margin-left: 10px;
-    font-size: 1.7rem;
+    margin-left: 0.7em;
+    font-size: 2rem;
     }
 }
 .menu_item_wrapper {
@@ -130,7 +131,7 @@ background-color: $content-holder;
     }
 }
 button {
-    width: 14em;
+    width: 12.2em;
     padding: 20px;
     margin: 20px 0px 50px 40px;
     font-size: 1.3rem;
@@ -153,6 +154,7 @@ footer {
     margin-top: -45px;
     height: 20%;
     padding-top: 20px;
+    padding-bottom: 0.6em;
     background-color: rgb(53, 53, 53);
         p, span , .footer_icon{
         color: #ffffff;
@@ -186,7 +188,22 @@ footer {
         .menu_items {
         animation: loading 4s ease-in-out;
         }
-        
+// *******************  Small Media Query Iphone 5/SE ***********
+@media screen and ( min-width: 320px) {
+body {
+width: fit-content;
+}       
+.heart_shell {
+transform: translate(245px, -41px);
+}
+.shaded_heart {
+transform: translate(209px, -41px);
+}
+
+.menu_wrapper h1 {
+font-size: 1.3rem;
+}
+}
 //    *****************Tablet Media Query***************
 @media screen and (min-width: 768px) {
     header{
@@ -228,7 +245,8 @@ footer {
     }
     .footer_wrapper{
     display: flex;
-    margin: 2em 0em 2em 2em;
+    margin: 2em 0em 0em 2em;
+    padding-bottom: 1.5em;
         p,span{
         font-size: 1.5rem;
         }
